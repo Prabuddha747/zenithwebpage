@@ -200,20 +200,22 @@ nav a.active::after, nav a:hover::after {
 }
 
 @media (max-width: 900px) {
-  .menu-toggle { display: block; }
+  .menu-toggle { display: block; z-index: 1001; }
   
   nav {
     position: fixed;
-    top: 70px;
+    top: 0;
     left: -100%;
-    width: 100%;
-    height: calc(100vh - 70px);
+    width: 80%;
+    height: 100vh;
     background: var(--bg);
+    display: flex; /* ENSURE FLEX */
     flex-direction: column;
-    padding: 40px;
-    gap: 20px;
-    transition: 0.3s ease;
-    z-index: 999;
+    padding: 100px 40px;
+    gap: 25px;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1000;
+    box-shadow: 20px 0 60px rgba(0,0,0,0.1);
   }
   
   nav.active {
@@ -221,9 +223,20 @@ nav a.active::after, nav a:hover::after {
   }
   
   nav a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     width: 100%;
-    text-align: center;
+    text-align: left;
+    display: block;
+  }
+
+  /* Ensure toggle is visible in mobile */
+  #theme-toggle {
+    margin-top: auto;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    justify-content: flex-start;
   }
 }
 
