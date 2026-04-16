@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Zenith Food Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,6 +17,7 @@
   <header class="header">
     <div class="container nav">
       <a href="index.html" class="logo"><img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Food Solutions"></a>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -26,115 +27,62 @@
         <a href="testimonial.html">Testimonials</a>
         <a href="career.html">Careers</a>
         <a href="contact.html" class="active">Contact</a>
+        <button id="theme-toggle" title="Toggle Dark Mode">🌙</button>
       </nav>
     </div>
   </header>
 
   <section class="hero" style="height: 40vh;">
     <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&auto=format&q=80" alt="Contact Us">
+      <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&auto=format&q=80" alt="Contact Zenith">
     </div>
     <div class="hero-content">
-      <h1>Let's <span>Connect</span></h1>
-      <p>Efficient and cost-effective customized solutions encompassing all aspects of catering.</p>
+      <h1>Get in <span>Touch</span></h1>
+      <p>Partner with Zenith for specialized hospitality excellence across India.</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="container">
-      <div class="grid" style="grid-template-columns: 1fr 1.5fr;">
-        <div class="contact-info">
-          <div class="card" style="height: 100%; border-top-color: var(--secondary);">
-            <h3 style="color: var(--primary);">Corporate Office</h3>
-            <p><strong>Zenith Food Solutions Private Limited</strong></p>
-            <p>#No.4/554, First Floor, Pari Salai,<br>Mogappair East, Chennai-600037.</p>
-            
-            <h3 style="color: var(--primary); margin-top: 30px;">Call Us</h3>
-            <p>Tel: +91 44 42878661</p>
-            
-            <h3 style="color: var(--primary); margin-top: 30px;">Email Us</h3>
-            <p>info@zenithfoodsolutions.com</p>
-            
-            <div style="margin-top: 40px;">
-              <h3 style="color: var(--secondary);">Operational Hours</h3>
-              <p>Monday - Friday: 09:00 AM - 06:00 PM</p>
-              <p>Saturday: 09:00 AM - 01:00 PM</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form">
-          <div class="card" style="height: 100%;">
-            <h3 style="border-bottom: 2px solid var(--light); padding-bottom: 15px;">Send Us a Message</h3>
-            <form id="contactForm" style="margin-top: 25px;">
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-                <div>
-                  <label style="display: block; margin-bottom: 8px; font-weight: 600;">Name</label>
-                  <input type="text" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;" placeholder="Your Name">
-                </div>
-                <div>
-                  <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email</label>
-                  <input type="email" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;" placeholder="Your Email">
-                </div>
-              </div>
-              <div style="margin-bottom: 20px;">
-                <label style="display: block; margin-bottom: 8px; font-weight: 600;">Subject</label>
-                <input type="text" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;" placeholder="Subject">
-              </div>
-              <div style="margin-bottom: 25px;">
-                <label style="display: block; margin-bottom: 8px; font-weight: 600;">Message</label>
-                <textarea style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; min-height: 150px;" placeholder="Your Message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
-            </form>
-          </div>
+    <div class="container info-grid">
+      <div class="info-text">
+        <h2>Contact Details</h2>
+        <p><strong>Registered Office:</strong></p>
+        <p>Zenith Food Solutions Private Limited<br>
+        #No.4/554, First Floor, Pari Salai,<br>
+        Mogappair East, Chennai - 600037.</p>
+        
+        <p style="margin-top: 20px;"><strong>Phone:</strong> +91 44 42878661</p>
+        <p><strong>Email:</strong> info@zenithfoodsolutions.com</p>
+        
+        <div style="margin-top: 30px; padding: 20px; background: var(--surface); border-radius: 10px;">
+          <h3 style="color: var(--primary); margin-bottom: 10px;">Overseas Business</h3>
+          <p>We are currently venturing into specialized overseas catering support. Contact us for global partnership inquiries.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- MAP PLACEHOLDER -->
-  <section class="section" style="padding-top: 0;">
-    <div class="container">
-      <div class="card" style="padding: 0; overflow: hidden; height: 400px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.291763784183!2d80.177000!3d13.080000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263d8!2sMogappair%20East%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="info-img">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1942.863131343729!2d80.18341995!3d13.08836515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263f3508494f1%3A0x6a05325776d6c6e7!2sMogappair%20East%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="400" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="container footer-grid">
-      <div class="footer-about">
-        <a href="index.html" class="footer-logo"><img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Food Solutions"></a>
-        <p>A trusted partner in increasing client productivity consistently through efficient operations and quality services.</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Logo">
+          <p style="font-size: 0.8rem; opacity: 0.6;">Premium Catering Partners since 2011.</p>
+        </div>
+        <div class="footer-contact-info">
+          <p>#No.4/554, First Floor, Pari Salai, Mogappair East, Chennai-00037.</p>
+          <p>+91 44 42878661 | info@zenithfoodsolutions.com</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
-      <div class="footer-links">
-        <h4>Sectors</h4>
-        <ul>
-          <li><a href="services.html">Healthcare</a></li>
-          <li><a href="services.html">Education</a></li>
-          <li><a href="services.html">Industrial</a></li>
-          <li><a href="services.html">Offshore</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="career.html">Careers</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h4>Contact Us</h4>
-        <p>#No.4/554, First Floor, Pari Salai,<br>Mogappair East, Chennai-600037.</p>
-        <p>+91 44 42878661</p>
-        <p>info@zenithfoodsolutions.com</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Zenith Food Solutions Private Limited. All Rights Reserved.</p>
     </div>
   </footer>
 

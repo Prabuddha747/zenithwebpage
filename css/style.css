@@ -190,6 +190,43 @@ nav a.active::after, nav a:hover::after {
   color: var(--primary);
 }
 
+/* MOBILE TOGGLE */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+  padding: 5px;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle { display: block; }
+  
+  nav {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: var(--bg);
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    transition: 0.3s ease;
+    z-index: 999;
+  }
+  
+  nav.active {
+    left: 0;
+  }
+  
+  nav a {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* HERO */
 .hero {
   min-height: 60vh;

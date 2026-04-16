@@ -37,6 +37,25 @@ function updateToggleIcon(theme) {
   }
 }
 
+// MOBILE MENU TOGGLE
+const menuToggle = document.getElementById('mobile-menu');
+const navMenu = document.querySelector('nav');
+
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    menuToggle.innerHTML = navMenu.classList.contains('active') ? '✕' : '☰';
+  });
+
+  // Close menu when clicking a link
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      menuToggle.innerHTML = '☰';
+    });
+  });
+}
+
 // SCROLL ANIMATIONS (Subtle Fade In)
 const observerOptions = {
   threshold: 0.1
