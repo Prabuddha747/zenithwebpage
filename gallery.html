@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Zenith Food Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .gallery-masonry {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .gallery-link {
+      display: block;
+      height: 350px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+    .gallery-link img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .gallery-link:hover img {
+      transform: scale(1.15);
+    }
+    .img-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 89, 159, 0.6); /* Zenith Blue overlay */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: var(--transition);
+    }
+    .gallery-link:hover .img-overlay {
+      opacity: 1;
+    }
+    .img-overlay i {
+      color: white;
+      font-size: 2rem;
+      transform: translateY(20px);
+      transition: var(--transition);
+    }
+    .gallery-link:hover .img-overlay i {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="loader">
+    <img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Logo" class="loader-logo">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Food Solutions"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="clients.html">Clients</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="career.html">Careers</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-toggle" title="Toggle Dark Mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="height: 40vh;">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1547928576-965be7f5f6a6?w=1600&auto=format&q=80" alt="Zenith Gallery">
+    </div>
+    <div class="hero-content">
+      <h1>Our <span>Gallery</span></h1>
+      <p>A visual representation of our world-class infrastructure and service excellence.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Visuals</span>
+        <h2>Kitchens, Services & Teams</h2>
+      </div>
+
+      <div class="gallery-masonry">
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/1%20img.jpg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/2%20img.jpg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/3%20img.jpg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/4%20img.jpg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/5%20img.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/6%20img.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/7%20img.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/8%20img.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/9%20img.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/10%20img.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/11%20img.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/12%20img.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/23.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/24.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/30.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/31.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/32.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/33.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+        <div class="gallery-link"><img src="https://www.zenithfoodsolutions.com/images/34.jpeg" alt="Zenith Gallery Image"> <div class="img-overlay"><i>🔍</i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Logo">
+          <p style="font-size: 0.8rem; opacity: 0.6;">Premium Catering Partners since 2011.</p>
+        </div>
+        <div class="footer-contact-info">
+          <p>#No.4/554, First Floor, Pari Salai, Mogappair East, Chennai-00037.</p>
+          <p>+91 44 42878661 | info@zenithfoodsolutions.com</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

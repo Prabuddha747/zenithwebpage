@@ -1,99 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Testimonials | Zenith</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials | Zenith Food Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container nav">
-    <h1 class="logo">Zenith</h1>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="#">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="#">Client</a>
-      <a href="#">Gallery</a>
-      <a href="testimonial.html">Testimonial</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact Us</a>
-    </nav>
+  <div id="loader">
+    <img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Logo" class="loader-logo">
+    <div class="spinner"></div>
   </div>
-</header>
 
-<!-- HERO -->
-<section class="hero" style="height:50vh;">
-  <div class="hero-content">
-    <h1>Testimonials</h1>
-    <p>What our clients say about us</p>
-  </div>
-</section>
-
-<!-- TESTIMONIAL SECTION -->
-<section class="section">
-  <div class="container">
-
-    <h2 class="center">Testimonials</h2>
-
-    <div class="testimonials">
-
-      <div class="testimonial-card">
-        <p>
-          "The Food Served before my dining table was delicious and tasty.
-          The service rendered by Zenith Company is excellent.
-          May God Almighty bless this establishment."
-        </p>
-        <h4>- Bishop Baselios Mar Thoma Paulose II</h4>
-        <img src="images/4680420150304_204139.jpg" alt="">
-      </div>
-
-      <div class="testimonial-card">
-        <p>
-          "Saveetha awarded us Best Food Partner."
-        </p>
-        <h4>- Dean Of Saveetha</h4>
-        <img src="images/test_image2789520150305_113831.jpg" alt="">
-      </div>
-
-      <div class="testimonial-card">
-        <p>
-          "Excellent. May God Bless You."
-        </p>
-        <h4>- Bishop Mar Dioscoros Yuhanon</h4>
-        <img src="images/test_image9208720150304_204211.jpg" alt="">
-      </div>
-
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Food Solutions"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="clients.html">Clients</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonial.html" class="active">Testimonials</a>
+        <a href="career.html">Careers</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-toggle" title="Toggle Dark Mode">🌙</button>
+      </nav>
     </div>
+  </header>
 
-  </div>
-</section>
+  <section class="hero" style="height: 40vh;">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?w=1600&auto=format&q=80" alt="Testimonials">
+    </div>
+    <div class="hero-content">
+      <h1>Partner <span>Feedback</span></h1>
+      <p>Echoes of excellence from those we serve across India.</p>
+    </div>
+  </section>
 
-<!-- CERTIFICATE / FEATURE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Partners Say</h2>
+        <p>A testament to our obsessive attention to detail and consistent high standards.</p>
+      </div>
 
-<section class="section" style="background:#f4f4f4;">
-  <div class="container center">
+      <!-- TESTIMONIAL CARDBOX GRID -->
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>The food served was delicious and tasty. The service rendered by Zenith is excellent. May God Almighty bless this establishment.</p>
+          <h4>Bishop Baselios Mar Thoma Paulose II</h4>
+          <span>Catholicos of the East</span>
+        </div>
 
-    <h2>Recognition</h2>
+        <div class="testimonial-card">
+          <p>Excellent quality and consistent standards. Zenith has developed a lasting relationship with us through specialized catering excellence.</p>
+          <h4>Dean of Saveetha</h4>
+          <span>Education Partner</span>
+        </div>
 
-    <img src="images/image.png" alt="Award" class="award-img">
+        <div class="testimonial-card">
+          <p>Fanatical attention to detail. Zenith understands our needs and delivers services that are truly a business imperative for us.</p>
+          <h4>Madras Medical Mission</h4>
+          <span>Healthcare Partner</span>
+        </div>
 
-  </div>
-</section>
+        <div class="testimonial-card">
+          <p>We are highly satisfied with the catering services provided. The quality of ingredients and professionalism is commendable.</p>
+          <h4>Schneider Electric</h4>
+          <span>Industrial Partner</span>
+        </div>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Zenith Food Solutions</p>
-</footer>
+        <div class="testimonial-card">
+          <p>Zenith Food Solutions has been our trusted partner for years. Their ability to handle large scale canteens with hygiene is unmatched.</p>
+          <h4>VIT University</h4>
+          <span>Education Partner</span>
+        </div>
 
-<script src="main.js"></script>
+        <div class="testimonial-card">
+          <p>Reliable service and exceptional food variety. They truly bring the 'South Remembrance' to our executive cafeteria.</p>
+          <h4>Flowserve</h4>
+          <span>Industrial Partner</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Logo">
+          <p style="font-size: 0.8rem; opacity: 0.6;">Premium Catering Partners since 2011.</p>
+        </div>
+        <div class="footer-contact-info">
+          <p>#No.4/554, First Floor, Pari Salai, Mogappair East, Chennai-00037.</p>
+          <p>+91 44 42878661 | info@zenithfoodsolutions.com</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,113 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zenith Food Solutions</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith Food Solutions | Premium Catering Excellence</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container nav">
-    <h1 class="logo">Zenith</h1>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="#">Client</a>
-      <a href="#">Gallery</a>
-      <a href="#">Testimonial</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact Us</a>
-    </nav>
+  <div id="loader">
+    <img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Logo" class="loader-logo">
+    <div class="spinner"></div>
   </div>
-</header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Premium Catering & Hospitality</h1>
-    <p>Delivering quality food experiences across industries</p>
-
-    <div class="hero-btns">
-      <a href="#" class="btn">Explore</a>
-      <a href="#" class="btn outline">Contact</a>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Food Solutions"></a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="clients.html">Clients</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="career.html">Careers</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-toggle" title="Toggle Dark Mode">🌙</button>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- ABOUT -->
-<section class="section">
-  <div class="container about">
-
-    <div class="about-img">
-      <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800&auto=format">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=1600&auto=format&q=80" alt="Premium Catering Service">
     </div>
+    <div class="hero-content">
+      <h1>Elevating <span>Hospitality</span><br>to its Zenith</h1>
+      <p>A leading organized player in the catering industry, serving over 30+ sites nationwide with a focus on hygiene, variety, and professional excellence.</p>
+      <a href="services.html" class="btn btn-primary">Our Services</a>
+    </div>
+  </section>
 
-    <div class="about-text">
-      <span class="tag">About Zenith</span>
-      <h2>Delivering Quality Food Experiences</h2>
-      <p>
-        Zenith Food Solutions provides specialized catering across healthcare,
-        education, industrial and offshore sectors with strong focus on hygiene,
-        quality and operational excellence.
-      </p>
-
-      <div class="about-stats">
-        <div class="box">25+ Years</div>
-        <div class="box">250+ Clients</div>
-        <div class="box">100+ Projects</div>
+  <!-- ABOUT ZENITH -->
+  <section class="section">
+    <div class="container info-grid">
+      <div class="info-text">
+        <div class="section-header">
+          <h2>About Zenith</h2>
+          <p>Founded in 2011, Zenith Food Solutions has masterfully blended traditional flavors with modern industrial standards.</p>
+        </div>
+        <p>We know that original ingredients are the cornerstone of good cooking and we are devoted to providing the best quality. We work in partnership with a number of prestigious Clients and have developed lasting relationships in providing specialised catering and hospitality services.</p>
+        <p style="margin-top: 20px;">Spearheaded by industry veterans Mr. B R Ramesh and Mr. R Kumaran having a combined experience of over 50 years.</p>
+        <a href="about.html" class="btn btn-primary" style="margin-top: 30px;">Learn More</a>
+      </div>
+      <div class="info-img">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&auto=format&q=80" alt="Zenith Fine Dining">
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="section">
-  <div class="container">
-
-    <h2 class="center">Our Services</h2>
-
-    <div class="services">
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600">
-        <h3>Healthcare Catering</h3>
-        <p>Patient meals & hospital services.</p>
+  <!-- HORIZONTAL SERVICES -->
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Specialized Services</h2>
+        <p>Tailored catering solutions for diverse industries across India.</p>
       </div>
+      
+      <div class="services-row">
+        <!-- Healthcare -->
+        <div class="service-box">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500&auto=format&q=80" alt="Healthcare Catering">
+          </div>
+          <div class="service-info">
+            <h3>Healthcare</h3>
+            <p>Therapeutic patient menus and dietitian-led nutritional planning for hospitals.</p>
+          </div>
+        </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600">
-        <h3>Industrial Catering</h3>
-        <p>Factory & canteen services.</p>
+        <!-- Industrial -->
+        <div class="service-box">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&auto=format&q=80" alt="Industrial Canteens">
+          </div>
+          <div class="service-info">
+            <h3>Industrial</h3>
+            <p>Large-scale factory canteens and executive cafeterias serving thousands daily.</p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="service-box">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&auto=format&q=80" alt="Education Catering">
+          </div>
+          <div class="service-info">
+            <h3>Education</h3>
+            <p>Vibrant student cafeterias and hostel canteens for premier educational institutions.</p>
+          </div>
+        </div>
+
+        <!-- Offshore -->
+        <div class="service-box">
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=500&auto=format&q=80" alt="Offshore Support">
+          </div>
+          <div class="service-info">
+            <h3>Offshore & Maritime</h3>
+            <p>Specialized food and support services on barges, vessels, and remote site camps.</p>
+          </div>
+        </div>
       </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600">
-        <h3>Corporate Catering</h3>
-        <p>Professional corporate dining.</p>
-      </div>
-
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- COMPACT FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Logo">
+          <p style="font-size: 0.8rem; opacity: 0.6;">Premium Catering Partners since 2011.</p>
+        </div>
+        <div class="footer-contact-info">
+          <p>#No.4/554, First Floor, Pari Salai, Mogappair East, Chennai-00037.</p>
+          <p>+91 44 42878661 | info@zenithfoodsolutions.com</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div style="margin-top: 30px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+        <p style="font-size: 0.75rem; color: rgba(255,255,255,0.4);">&copy; 2026 Zenith Food Solutions Private Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Zenith Food Solutions</p>
-</footer>
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
-<div id="loader">
-  <div class="spinner"></div>
-</div>
 </html>

@@ -1,103 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Zenith</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Zenith Food Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="container nav">
-    <h1 class="logo">Zenith</h1>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="#">Client</a>
-      <a href="#">Gallery</a>
-      <a href="testimonial.html">Testimonial</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact Us</a>
-    </nav>
+  <div id="loader">
+    <img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Logo" class="loader-logo">
+    <div class="spinner"></div>
   </div>
-</header>
 
-<!-- HERO -->
-<section class="hero" style="height:50vh;">
-  <div class="hero-content">
-    <h1>About Us</h1>
-
-  </div>
-</section>
-
-<!-- ABOUT SECTION -->
-<section class="section">
-  <div class="container about">
-
-    <div class="about-img hover-zoom">
-      <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800">
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Food Solutions"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="clients.html">Clients</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="career.html">Careers</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-toggle" title="Toggle Dark Mode">🌙</button>
+      </nav>
     </div>
+  </header>
 
-    <div class="about-text">
-      <span class="tag">About Zenith</span>
-      <h2>Delivering Quality Food Experiences</h2>
-      <p>
-        Zenith Food Solutions Private Limited is a leading catering and hospitality service provider,
-        focused on delivering high-quality, hygienic, and reliable food services across industries.
-        With decades of combined leadership experience, we ensure operational excellence and
-        long-term client satisfaction.
-      </p>
+  <section class="hero" style="height: 40vh;">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=1600&auto=format&q=80" alt="About Zenith">
     </div>
+    <div class="hero-content">
+      <h1>Our Legacy of <span>Taste</span></h1>
+      <p>Driving hospitality standards through innovation and quality for over two decades.</p>
+    </div>
+  </section>
 
-  </div>
-</section>
+  <!-- WHO WE ARE -->
+  <section class="section">
+    <div class="container info-grid">
+      <div class="info-text">
+        <div class="section-header">
+          <h2>Who We Are</h2>
+        </div>
+        <p>Zenith Food Solutions Private Limited is a leading catering and hospitality service provider, focused on delivering high-quality, hygienic, and reliable food services across industries.</p>
+        <p style="margin-top: 20px;">Incorporated in 2011, we currently operate at over 30 sites across India. Our ethos is not just to meet, but to exceed our client's expectations through Service Excellence.</p>
+        <div style="margin-top: 30px; display: flex; gap: 20px;">
+          <div><h4 style="color: var(--primary);">₹50 Cr+</h4><p style="font-size: 0.8rem; opacity: 0.6;">Annual Revenue</p></div>
+          <div><h4 style="color: var(--primary);">30+</h4><p style="font-size: 0.8rem; opacity: 0.6;">Sites Nationwide</p></div>
+        </div>
+      </div>
+      <div class="info-img">
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&auto=format&q=80" alt="Kitchen Operations">
+      </div>
+    </div>
+  </section>
 
-<!-- DIRECTORS -->
-<section class="section" style="background:#f4f4f4;">
-  <div class="container">
-
-    <h2 class="center">Leadership Team</h2>
-
-    <div class="team">
-
-      <div class="team-card hover-zoom">
-        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500">
-        <h3>B R RAMESH</h3>
-        <span>Director - Operations</span>
-        <p>
-          Ramesh has over 25 years of experience in Catering & Hospitality.
-          He has a strong track record in team and project management and
-          has successfully led operational strategies across major catering companies.
-        </p>
+  <!-- LEAD MANAGEMENT -->
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Lead Management</h2>
+        <p>Guided by industry veterans with deep-rooted expertise in catering and corporate finance.</p>
       </div>
 
-      <div class="team-card hover-zoom">
-        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=500">
-        <h3>R KUMARAN</h3>
-        <span>Director - Commercial</span>
-        <p>
-          Kumaran is a highly experienced leader with 25+ years in hospitality.
-          He has served as CFO in multiple organizations and brings strong
-          financial and commercial expertise to Zenith.
-        </p>
+      <div class="grid">
+        <!-- B R Ramesh -->
+        <div class="card" style="border-top: 5px solid var(--primary);">
+          <h3>B R RAMESH</h3>
+          <span style="color: var(--primary); font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Director-Operations</span>
+          <p style="margin-top: 15px;">Ramesh has over twenty-five years of experience in the Catering & Hospitality industry. He has a successful track-record both in team and project management. Previous to taking this position, he has successfully overseen the implementation of the company's overall development strategy by heading the Operations team with Major Competing Catering Co's.</p>
+        </div>
+
+        <!-- R Kumaran -->
+        <div class="card" style="border-top: 5px solid var(--secondary);">
+          <h3>R KUMARAN</h3>
+          <span style="color: var(--secondary); font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Director-Commercial</span>
+          <p style="margin-top: 15px;">Kumaran is an experienced, highly qualified member serving as our Director-Commercial. He has been in the Hospitality industry for over 25 years serving as Chief Financial Officer in various organizations. The various companies K KUMARAN has been a part of greatly contribute to his ability to succeed in this role.</p>
+        </div>
       </div>
-
     </div>
+  </section>
 
-  </div>
-</section>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="https://www.zenithfoodsolutions.com/images/logo.jpg" alt="Zenith Logo">
+          <p style="font-size: 0.8rem; opacity: 0.6;">Premium Catering Partners since 2011.</p>
+        </div>
+        <div class="footer-contact-info">
+          <p>#No.4/554, First Floor, Pari Salai, Mogappair East, Chennai-00037.</p>
+          <p>+91 44 42878661 | info@zenithfoodsolutions.com</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Zenith Food Solutions Private Limited. All Rights Reserved.</p>
-</footer>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
