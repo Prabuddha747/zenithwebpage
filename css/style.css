@@ -1,0 +1,276 @@
+/* LOADER */
+#loader{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.spinner{
+  width:50px;
+  height:50px;
+  border:5px solid #eee;
+  border-top:5px solid #c0392b;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  100%{ transform:rotate(360deg); }
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  color:#333;
+}
+
+/* CONTAINER */
+.container{
+  width:90%;
+  max-width:1300px;   /* 🔥 CHANGED (was 1200px) */
+  margin:auto;
+}
+
+/* HEADER */
+.header{
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* NAVBAR */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 0;   /* 🔥 slightly increased */
+}
+
+/* LOGO */
+.logo{
+  color:#c0392b;
+  font-size:28px;     /* 🔥 added */
+  font-weight:600;    /* 🔥 added */
+}
+
+/* NAV LINKS */
+nav{
+  display:flex;
+  align-items:center;
+}
+
+nav a{
+  margin-left:30px;   /* 🔥 increased spacing */
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+  font-size:15px;     /* 🔥 added */
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#c0392b;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+}
+
+.hero::before{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+  position:relative;
+  color:#fff;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.hero p{
+  margin:10px 0;
+}
+
+/* BUTTON */
+.btn{
+  background:#c0392b;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:30px;
+  text-decoration:none;
+  margin:5px;
+}
+
+.btn.outline{
+  border:1px solid #fff;
+  background:transparent;
+}
+
+/* SECTION */
+.section{
+  padding:60px 0;
+}
+
+.center{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+/* ABOUT */
+.about{
+  display:flex;
+  gap:40px;
+  align-items:center;
+}
+
+.about-img img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.tag{
+  background:#c0392b;
+  color:#fff;
+  padding:5px 12px;
+  border-radius:20px;
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+.about-stats{
+  display:flex;
+  gap:10px;
+  margin-top:15px;
+}
+
+.box{
+  background:#f4f4f4;
+  padding:10px 15px;
+  border-radius:8px;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card h3{
+  padding:10px;
+}
+
+.card p{
+  padding:0 10px 15px;
+}
+
+/* FOOTER */
+footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .about{
+    flex-direction:column;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+}
+
+
+/* TESTIMONIALS */
+.testimonials{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.testimonial-card{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.testimonial-card:hover{
+  transform:translateY(-5px);
+}
+
+.testimonial-card p{
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+.testimonial-card h4{
+  color:#c0392b;
+}
+
+/* AWARD IMAGE */
+.award-img{
+  margin-top:20px;
+  width:300px;
+  border-radius:10px;
+}
+
+/* TESTIMONIAL IMAGE */
+.testimonial-card img{
+  width:80px;
+  height:80px;
+  object-fit:cover;
+  border-radius:50%;
+  margin-top:10px;
+}
+
+/* AWARD IMAGE IMPROVEMENT */
+.award-img{
+  margin-top:30px;
+  width:350px;
+  max-width:100%;
+  border:8px solid #fff;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
