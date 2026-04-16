@@ -531,10 +531,6 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  nav {
-    display: none; /* Mobile menu needed */
-  }
-  
   .section-header h2 { font-size: 2rem; }
   .section { padding: 60px 0; }
   
